@@ -12,7 +12,7 @@ public class DummyRestController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello from Spring Boot at App Engine with Jetty !!";
+        return "YAY...Hello from Spring Boot at App Engine deployed using Container Builder !!";
     }
 
     @GetMapping("/time")
