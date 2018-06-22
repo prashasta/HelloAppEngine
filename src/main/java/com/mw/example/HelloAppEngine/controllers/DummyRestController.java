@@ -12,13 +12,13 @@ public class DummyRestController {
 
     @GetMapping("/")
     public String hello() {
-        return "YAY...Hello from Spring Boot at App Engine deployed using Container Builder with Github integration on code push !!";
+        return "YAY...Hello from Spring Boot at App Engine deployed using Container Builder with Github integration on code push and  artifact changed!!";
     }
 
     @GetMapping("/time")
     public String time() {
         //return Calendar.getInstance().getTime().toString();
-        return LocalDateTime.now(ZoneId.of("CST6CDT")).toString();
+        return String.format("Current time in Chicago is %s", LocalDateTime.now(ZoneId.of("CST6CDT")).toString());
     }
 
 }
